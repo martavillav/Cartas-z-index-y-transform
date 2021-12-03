@@ -1,0 +1,277 @@
+body{
+	background-color: darkgreen;
+}
+.carta {
+	height:  300px;
+	width:  200px;
+	background: white;
+	border-radius: 5px;
+	border: 2px black solid;
+}
+.numero{
+	font-size: 30px;
+}
+.simbolo {
+	font-size: 30px;
+}
+.palo {
+	font-size: 40px;
+}
+#cinco_corazones {
+	position: relative;
+	left: 55px;
+	top: 75px;
+	color: red;
+	z-index: 7;
+	
+	animation-name: carta5;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+#numeracion5corazones_invertido {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#numeracion4treboles_invertido {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#numeracion2treboles_invertido {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#numeracion3picas_invertido {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#numeracion7treboles_invertido {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#cinco_corazones>#palo1 {
+position: absolute;
+top: 80px;
+left: 50px;
+}
+#cinco_corazones>#palo2 {
+position: absolute;
+top: 80px;
+left: 120px;
+}
+#cinco_corazones>#palo3 {
+position: absolute;
+top: 120px;
+left: 85px;
+}
+#cinco_corazones>#palo4 {
+position: absolute;
+top: 160px;
+left: 50px;
+}
+#cinco_corazones>#palo5 {
+position: absolute;
+top: 160px;
+left: 120px;
+}
+
+#dos_treboles {
+	position: absolute;
+	left: 60px;
+	top: 80px;
+	animation-name: carta2;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+	
+}
+#dos_treboles>#palo1 {
+	position: absolute;
+	left: 85px;
+	top: 30px;
+}
+#dos_treboles>#palo2 {
+	position: absolute;
+	left: 85px;
+	bottom: 30px;
+	transform: rotate(180deg);
+}
+
+#cuatro_treboles {
+	position: absolute;
+	left: 60px;
+	top: 80px;
+	z-index: 5;
+	animation-name: carta4;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+	
+}
+
+#cuatro_treboles>#palo1 {
+	position: absolute;
+	left: 40px;
+	top: 50px;
+}
+
+#cuatro_treboles>#palo2 {
+	position: absolute;
+	right: 40px;
+	top: 50px;
+}
+
+#cuatro_treboles>#palo3 {
+	position: absolute;
+	right: 40px;
+	bottom: 30px;
+	transform: rotate(180deg);
+}
+
+#cuatro_treboles>#palo4 {
+	position: absolute;
+	left: 40px;
+	bottom: 30px;
+	transform: rotate(180deg);
+}
+
+
+
+
+
+#tres_picas {
+	position: absolute;
+	left: 60px;
+	top: 80px;
+	z-index: 4;
+	animation-name: carta3;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+	
+
+}
+
+#tres_picas>#palo1 {
+	position: absolute;
+	left: 75px;
+	top: 50px;
+}
+
+#tres_picas>#palo2 {
+	position: absolute;
+	left: 75px;
+	top: 130px;
+}
+
+#tres_picas>#palo3 {
+	position: absolute;
+	left: 75px;
+	bottom: 35px;
+	transform: rotate(180deg);
+}
+
+
+#siete_treboles {
+	position: absolute;
+	left: 60px;
+	top: 80px;
+	z-index: 6;
+
+	animation-name: carta7;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+#siete_treboles>#palo1 {
+position: absolute;
+	right: 45px;
+	top: 30px;
+}
+#siete_treboles>#palo2 {
+position: absolute;
+	left: 45px;
+	top: 30px;
+}
+#siete_treboles>#palo3 {
+position: absolute;
+	left: 80px;
+	top: 70px;
+}
+#siete_treboles>#palo4 {
+position: absolute;
+	left: 45px;
+	top: 110px;
+	transform: rotate(180deg);
+}
+#siete_treboles>#palo5 {
+position: absolute;
+	right: 45px;
+	top: 110px;
+	transform: rotate(180deg);
+}
+#siete_treboles>#palo6 {
+position: absolute;
+	right: 45px;
+	bottom: 60px;
+	transform: rotate(180deg);
+}
+#siete_treboles>#palo7 {
+	position: absolute;
+	left: 45px;
+	bottom: 60px;
+	transform: rotate(180deg);
+}
+
+@keyframes carta5 {
+0% {left: 60px;
+	top: 80px;}
+100% {
+	left: 410px;
+	top: 80px;
+	transform: rotate(20deg);
+}
+}
+@keyframes carta7 {
+	0%{left: 60px;
+		top: 80px;}
+	100%{left: 340px;
+	top: 60px;
+	transform: rotate(10deg);
+	}
+}
+@keyframes carta4 {
+	0%{left: 60px;
+		top: 80px;}
+	100% {left: 250px;
+	top: 50px;
+		transform: rotate(-3deg);
+
+	}
+}
+@keyframes carta3 {
+	0%{left: 60px;
+		top:  80px;}
+	100%{left: 150px;
+	top: 60px;
+transform: rotate(-12deg);}
+}
+@keyframes carta2 {
+	0%{left: 60px;
+		top: 80px;}
+	100%{left: 60px;
+	top: 80px;
+	transform: rotate(-20deg);
+}
+}
